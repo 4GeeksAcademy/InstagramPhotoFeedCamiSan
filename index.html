@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Camila Sánchez-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Photo Feed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar bg-light">
+        <div class="container-fluid justify-content-space-between">
+            <div class="brand">
+                <i class="bi bi-instagram"></i>
+                <a class="navbar-brand" style="color: black;">Instagram</a>
+            </div>
+            <form class="d-flex" role="search">
+
+                <div class="buttons">
+                    
+                    <button type="button" class="btn btn-primary bg-success border-success ms-5" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group">
+                                        <label for="basic-url" class="form-label"><strong>Caption:</strong></label>
+                                        <div class="input-group mb-3">
+                                            <textarea type="text-area" class="form-control" id="basic-url"
+                                                aria-describedby="basic-addon3"
+                                                placeholder="Add the caption of your post here"></textarea>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-light"><i class="bi bi-camera-fill"></i></button>
+                                    <button type="button" class="btn btn-light"><i class="bi bi-geo-alt-fill"></i></button>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button"
+                                        class="btn btn-primary bg-success border-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="bi bi-gear-fill"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- tabs -->
+    <ul class="nav nav-tabs nav justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                    class="bi bi-grid-3x3"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                    class="bi bi-square-fill"></i></button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
+                    <img src="https://www.mascotahogar.com/800x600/wallpaper-de-un-perro-pequeno.jpg"
+                        class="w-100 shadow-1-strong  mb-4" style="height: 480px; width:480px"/>
+
+                    <img src="https://media.istockphoto.com/id/1340766096/es/foto/hermosa-estudiante-universitaria-sonriente.jpg?s=612x612&w=0&k=20&c=Hctd27-iKft51kzyW82VCS26AXheGmU_K0CJc9Ob3VM="
+                        class="w-100 shadow-1-strong  mb-4" style="height: 480px; width:480px"/>
+
+                    <img src="https://www.beachgardenrd.com/wp-content/uploads/2017/08/playa-juanillo-cap-cana.jpg"
+                        class="w-100 shadow-1-strong  mb-4" style="height: 480px; width:480px"/>
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="https://i.pinimg.com/736x/56/dd/ea/56ddea0e541e4220dc292a7453fe0483.jpg"
+                        class="w-100 shadow-1-strong  mb-4" style="height: 480px; width:480px"/>
+
+                    <img src="https://w0.peakpx.com/wallpaper/789/997/HD-wallpaper-code-programming-text-technology.jpg"
+                        class="w-100 shadow-1-strong  mb-4" style="height: 480px; width:480px"/>
+
+                    <img src="https://img.freepik.com/foto-gratis/hermoso-paisaje-nevado-montanas_181624-26450.jpg"
+                        class="w-100 shadow-1-strong mb-4" style="height: 480px; width:480px"/>
+
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="https://images.hola.com/imagenes/mascotas/20210324186573/perros-gatos-felices-necesidades/0-933-511/perros-gatos-m.jpg?tx=w_680"
+                        class="w-100 shadow-1-strong mb-4" style="height: 480px; width:480px"/>
+
+                    <img src="https://utec.edu.uy/uploads/evento/7bd03e63e5e2880f320618f6257328ab13909222.jpg"
+                        class="w-100 shadow-1-strong  mb-4" style="height: 480px; width:480px"/>
+
+                    <img src="https://media.traveler.es/photos/613768f03decec3303bab7da/16:9/w_1280,c_limit/158835.jpg"
+                        class="w-100 shadow-1-strong mb-4" style="height: 480px; width:480px"/>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane fade cols-1 display-flex" id="profile-tab-pane" role="tabpanel"
+            aria-labelledby="profile-tab" tabindex="0">
+            <!--card1-->
+            <div class="card w-50 mt-3 mx-auto">
+                <div class="card-header d-flex justify-content-between bg-white">
+                    <h5 class="card-title">My Crazy Dog Spark!</h5>
+                    <p class="text-end">08/26</p>
+                </div>
+                <img src="https://www.mascotahogar.com/800x600/wallpaper-de-un-perro-pequeno.jpg" alt=""
+                    class="img-fluid">
+                <div class="card-body">
+                    <p><b>288 Likes</b></p>
+                    <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+
+                </div>
+
+            </div>
+            <!--card2-->
+            <div class="d-flex flex-colum justify-content-center">
+                <div class="card w-50 mt-3 max-auto">
+                    <div class="card-header d-flex justify-content-between bg-white">
+                        <h5>My Trip Through The Snow </h5>
+                        <p>04/09</p>
+                    </div>
+                    <img src="https://img.freepik.com/foto-gratis/hermoso-paisaje-nevado-montanas_181624-26450.jpg" alt=""
+                        class="img-fluid">
+                    <div class="card-body">
+                        <p><b>346 Likes</b></p>
+                        <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--card3-->
+            <div class="d-flex flex-colum justify-content-center">
+                <div class="card w-50 mt-3 max-auto">
+                    <div class="card-header d-flex justify-content-between bg-white">
+                        <h5>My pets :)</h5>
+                        <p>06/10</p>
+                    </div>
+                    <img src="https://images.hola.com/imagenes/mascotas/20210324186573/perros-gatos-felices-necesidades/0-933-511/perros-gatos-m.jpg?tx=w_680" alt=""
+                        class="img-fluid">
+                    <div class="card-body">
+                        <p><b>590 Likes</b></p>
+                        <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
